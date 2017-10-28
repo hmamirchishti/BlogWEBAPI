@@ -11,6 +11,6 @@ namespace BlogWEBAPI.EFUtilities
         public string name { get; set; }
         public string email { get; set; }
         public string website { get; set; }
-        public blog_comment blog_comment { get; set; }
+        public IList<blog_comment> blog_comments { get; set; }
     }
 }

@@ -4,6 +4,9 @@ namespace BlogWEBAPI.EFUtilities
 {
     public class BlogDBContext: DbContext
     {
+        public BlogDBContext() {
+            Database.SetInitializer(new BlogDBSeeder());
+        }
         public DbSet<blog_auther> blog_auther { get; set; }
         public DbSet<blog_category> blog_cateogry { get; set; }
         public DbSet<blog_comment> blog_comment { get; set; }

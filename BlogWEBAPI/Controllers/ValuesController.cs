@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlogWEBAPI.EFUtilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -7,7 +8,7 @@ using System.Web.Http;
 
 namespace BlogWEBAPI.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values
@@ -21,7 +22,10 @@ namespace BlogWEBAPI.Controllers
         {
             return "value";
         }
-
+        public List<blog_post> GetPosts() {
+            var context = BlogDBRepository.BlogRepositorInstance;
+            return context.GetPosts();
+        }
         // POST api/values
         public void Post([FromBody]string value)
         {

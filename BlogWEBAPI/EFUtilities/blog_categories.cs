@@ -7,7 +7,7 @@ namespace BlogWEBAPI.EFUtilities
 {
     public class blog_category
     {
-        int id { get; set; }
+        public int id { get; set; }
         public string name { get; set; }
         public Boolean enabled { get; set; }
         public DateTime date_created { get; set; }

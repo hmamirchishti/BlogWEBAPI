@@ -9,7 +9,7 @@ namespace BlogWEBAPI.EFUtilities
         private static BlogDBContext dbcontext = new BlogDBContext();
         private static BlogDBRepository BlogdbRepository = null;
         private BlogDBRepository() {}
-        public static BlogDBRepository blogdbRepository
+        public static BlogDBRepository BlogRepositorInstance
         {
             get
             {
@@ -22,7 +22,7 @@ namespace BlogWEBAPI.EFUtilities
         }
         ////////////////////////Methods////////////////////////////////
         public List<blog_post> GetPosts() {
-            return dbcontext.blog_post.ToList();
+               return dbcontext.blog_post.ToList();
         }
     }
 }

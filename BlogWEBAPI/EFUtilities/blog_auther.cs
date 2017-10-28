@@ -11,6 +11,6 @@ namespace BlogWEBAPI.EFUtilities
         public string display_name { get; set; }
         public string first_name { get; set; }
         public string last_name { get; set; }
-        public blog_post blog_post { get; set; }
+        public List<blog_post> blog_posts { get; set; }
     }
 }

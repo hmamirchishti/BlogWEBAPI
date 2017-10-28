@@ -2,7 +2,7 @@
 {
     public class blog_related
     {
-        public int blog_post_id { get; set; }
-        public int blog_related_post_id { get; set; }
+        public int id { get; set; }
+        public blog_post blog_post { get; set; }
     }
 }

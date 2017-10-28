@@ -229,8 +229,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
-    <Compile Include="EFUtilities\BlogDBContext.cs" />
-    <Compile Include="EFUtilities\BlogDBRepository.cs" />
+    <Compile Include="EFUtilities\Customize\BlogDBContext.cs" />
+    <Compile Include="EFUtilities\Customize\BlogDBRepository.cs" />
+    <Compile Include="EFUtilities\Customize\BlogDBSeeder.cs" />
     <Compile Include="EFUtilities\blog_auther.cs" />
     <Compile Include="EFUtilities\blog_categories.cs" />
     <Compile Include="EFUtilities\blog_comment.cs" />
@@ -238,6 +239,7 @@
     <Compile Include="EFUtilities\blog_related.cs" />
     <Compile Include="EFUtilities\blog_tag.cs" />
     <Compile Include="EFUtilities\blog_user.cs" />
+    <Compile Include="EFUtilities\Customize\SeedingClasses\SeedingData.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
