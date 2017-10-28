@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Data.Entity;
 
 namespace BlogWEBAPI.EFUtilities
 {
@@ -7,8 +8,7 @@ namespace BlogWEBAPI.EFUtilities
     {
         private static BlogDBContext dbcontext = new BlogDBContext();
         private static BlogDBRepository BlogdbRepository = null;
-        private BlogDBRepository() {
-}
+        private BlogDBRepository() {}
         public static BlogDBRepository blogdbRepository
         {
             get
