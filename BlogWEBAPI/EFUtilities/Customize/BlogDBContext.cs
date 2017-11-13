@@ -1,8 +1,9 @@
-﻿using System.Data.Entity;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
 
 namespace BlogWEBAPI.EFUtilities
 {
-    public class BlogDBContext: DbContext
+    public class BlogDBContext: IdentityDbContext<IdentityUser>
     {
         public BlogDBContext() {
             Database.SetInitializer(new BlogDBSeeder());

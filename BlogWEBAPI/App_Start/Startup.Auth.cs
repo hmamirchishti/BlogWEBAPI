@@ -10,6 +10,8 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using BlogWEBAPI.Providers;
 using BlogWEBAPI.Models;
+using BlogWEBAPI.EFUtilities;
+using BlogWEBAPI.Models.ViewModels;
 
 namespace BlogWEBAPI
 {
@@ -64,6 +66,7 @@ namespace BlogWEBAPI
             //    ClientId = "",
             //    ClientSecret = ""
             //});
+            AutoMapper.Mapper.Initialize(config => { config.CreateMap<blog_post,PostViewModel>(); });
         }
     }
 }

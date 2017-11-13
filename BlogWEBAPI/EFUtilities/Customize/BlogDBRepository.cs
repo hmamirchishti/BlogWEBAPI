@@ -34,7 +34,7 @@ namespace BlogWEBAPI.EFUtilities
 
                 return true;
             }
-            catch (Exception) {
+            catch (Exception ex) {
                 return false;
             }
         }

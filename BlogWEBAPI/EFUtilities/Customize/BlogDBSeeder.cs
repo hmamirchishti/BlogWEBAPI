@@ -7,7 +7,7 @@ namespace BlogWEBAPI.EFUtilities
     {
         protected override void Seed(BlogDBContext context)
         {
-            for (int i = 1; i <= 111; i++) { 
+            for (int i = 1; i <= 5; i++) { 
             var auther = SeedingData.GetAuther(i);
             var post = SeedingData.GetPost(i);
             var comment = SeedingData.GetComment(i);
